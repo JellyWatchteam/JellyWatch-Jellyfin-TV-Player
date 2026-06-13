@@ -1,6 +1,6 @@
 # JellyWatch for Android TV
 
-JellyWatch is a fast, native Jellyfin client for Android TV. Sign in to your Jellyfin server and stream your movies and TV shows on the big screen with Direct Play, 4K, HDR and full subtitle support, all built around the remote control.
+JellyWatch is a fast, native Jellyfin client for Android TV and Google TV. Sign in to your Jellyfin server and stream your movies and TV shows on the big screen with Direct Play, 4K, HDR and full subtitle support, all built around the remote control.
 
 **[Get it on Google Play](https://play.google.com/store/apps/details?id=com.jellywatch.tv)**
 
@@ -65,7 +65,7 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 ## Requirements
 
 - A running Jellyfin server
-- Android TV device
+- Android TV or Google TV device
 - Android 8.0 (API 26) or newer
 
 ## Tech stack
@@ -73,7 +73,11 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Kotlin and Jetpack Compose for TV
 - Material Design 3
 - ExoPlayer / Media3 for playback
+- Hilt for dependency injection
+- Retrofit and Gson for networking
+- Coil for image loading
+
 
 ## Keywords
 
-Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, Jellyfin Fire TV, stream movies and TV shows, Direct Play, 4K HDR streaming, Jellyseerr requests, media server client, home cinema.
+Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, stream movies and TV shows, Direct Play, 4K HDR streaming, Jellyseerr requests, media server client, home cinema.
