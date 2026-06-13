@@ -1,1 +1,83 @@
-# JellyWatch-Jellyfin-TV-Player
+# JellyWatch for Android TV
+
+JellyWatch is a fast, native Jellyfin client for Android TV, Google TV and Fire TV. Sign in to your Jellyfin server and stream your movies and TV shows on the big screen with Direct Play, 4K, HDR and full subtitle support, all built around the remote control.
+
+**[Get it on Google Play](https://play.google.com/store/apps/details?id=com.jellywatch.tv)**
+
+JellyWatch is an independent third party client for Jellyfin. A Jellyfin server is required. JellyWatch is not affiliated with the Jellyfin project.
+
+## Overview
+
+JellyWatch turns your Jellyfin server into a home cinema experience on the television. It is built natively for the big screen with a modern Material Design 3 interface, smooth D-pad navigation, high resolution artwork and instant playback. The goal is simple: a fast, elegant Jellyfin TV player without sluggish menus.
+
+## Features
+
+### Playback
+
+- Real Direct Play so your files are streamed as is, with no quality loss
+- Hardware accelerated playback powered by ExoPlayer (Media3)
+- Smart transcoding fallback when a codec is not supported by the device
+- 4K, HDR and HLS support
+- Multiple audio tracks and surround sound, with optional stereo downmix
+- Full subtitle support: SRT, styled ASS and SSA, with optional server burn-in
+- Chapters, resume playback and automatic next episode
+
+### Home screen
+
+- Resume watching right where you left off
+- Next Up to keep track of your TV shows
+- Recently added content organized by library
+- Direct access to every Jellyfin library
+
+### Movies and TV shows
+
+- Detailed pages with overview, cast, crew and studio
+- Browse by seasons and episodes
+- Technical info: resolution, video and audio codecs, container
+- More like this and similar content suggestions
+- Mark as watched or unwatched and restart from the beginning
+
+### Search
+
+- Find movies, TV shows and episodes in seconds
+- Filter by content type
+
+### Requests with Seerr
+
+- Jellyseerr and Overseerr integration
+- Request new movies and TV shows straight from your TV
+- Track requests: pending, approved and available
+- Request full sagas and collections in one action
+- Browse trending and popular titles and upcoming releases
+
+### Sign in
+
+- Username and password login
+- Credentials encrypted and stored securely on the device
+
+### Built for your setup
+
+- Automatic detection of device capabilities and codecs
+- Force stereo output for older receivers and televisions
+- Image cache management
+- Optional animated background
+
+## Requirements
+
+- A running Jellyfin server
+- Android TV, Google TV or Fire TV device
+- Android 8.0 (API 26) or newer
+
+## Tech stack
+
+- Kotlin and Jetpack Compose for TV
+- Material Design 3
+- ExoPlayer / Media3 for playback
+- Hilt for dependency injection
+- Retrofit and Gson for networking
+- Coil for image loading
+
+
+## Keywords
+
+Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, Jellyfin Fire TV, stream movies and TV shows, Direct Play, 4K HDR streaming, Jellyseerr requests, media server client, home cinema.
