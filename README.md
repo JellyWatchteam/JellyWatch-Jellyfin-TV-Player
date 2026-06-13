@@ -65,7 +65,7 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 ## Requirements
 
 - A running Jellyfin server
-- Android TV, Google TV or Fire TV device
+- Android TV device
 - Android 8.0 (API 26) or newer
 
 ## Tech stack
@@ -73,10 +73,6 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Kotlin and Jetpack Compose for TV
 - Material Design 3
 - ExoPlayer / Media3 for playback
-- Hilt for dependency injection
-- Retrofit and Gson for networking
-- Coil for image loading
-
 
 ## Keywords
 
