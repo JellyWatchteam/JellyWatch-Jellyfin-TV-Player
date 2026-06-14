@@ -50,9 +50,27 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Request full sagas and collections in one action
 - Browse trending and popular titles and upcoming releases
 
+### Admin Dashboard
+
+- Real time server monitoring on your TV
+- View active playback sessions with backdrop artwork, progress and transcode status
+- Library statistics: movie, series, episode and song counts
+- Connected devices summary grouped by user
+- Trigger a full library scan from the remote
+- Running task progress with live updates every 3 seconds
+- Server info: version, OS, local address, update and restart alerts
+- Admin only: visible in the sidebar when logged in as a Jellyfin administrator
+
+### Multi Account
+
+- Switch between multiple Jellyfin accounts on the same device
+- Account picker with avatar, server info and quick switch
+- Auto focus on the active account
+- Remove accounts with confirmation dialog
+
 ### Sign in
 
-- Username and password login
+- Username and password login with show and hide toggle
 - Credentials encrypted and stored securely on the device
 
 ### Built for your setup
@@ -61,6 +79,7 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Force stereo output for older receivers and televisions
 - Image cache management
 - Optional animated background
+- GPU optimized animations for smooth performance on low end TV hardware
 
 ## Requirements
 
@@ -76,8 +95,10 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Hilt for dependency injection
 - Retrofit and Gson for networking
 - Coil for image loading
-
+- Compose compiler stability configuration for minimal recompositions
+- Baseline Profile for fast cold start
+- GPU accelerated animations via graphicsLayer
 
 ## Keywords
 
-Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, stream movies and TV shows, Direct Play, 4K HDR streaming, Jellyseerr requests, media server client, home cinema.
+Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, stream movies and TV shows, Direct Play, 4K HDR streaming, Jellyseerr requests, media server client, home cinema, admin dashboard, server monitoring.
