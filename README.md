@@ -21,6 +21,10 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Multiple audio tracks and surround sound, with optional stereo downmix
 - Full subtitle support: SRT, styled ASS and SSA, with optional server burn-in
 - Chapters, resume playback and automatic next episode
+- Quality selection during playback (4K / 1080p / 720p / 480p / 360p)
+- **Trickplay thumbnails** during seek — scrub the timeline and see a live preview of the video at the target position (requires trickplay to be generated on the server)
+- **Display rate switching** — optionally match the TV refresh rate and resolution to the video frame rate (24p, 25p, 30p…) for smoother playback
+- **Stats for Nerds** overlay — live display of video codec, resolution, bitrate, frame rate, HDR type, audio codec, network bandwidth, dropped frames, buffer health and current display mode
 
 ### Home screen
 
@@ -32,6 +36,7 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 ### Movies and TV shows
 
 - Detailed pages with overview, cast, crew and studio
+- **Theme songs** — ambient background music plays automatically when browsing movie and series pages (if the server has theme songs available; configurable volume or disable in settings)
 - Browse by seasons and episodes
 - Technical info: resolution, video and audio codecs, container
 - More like this and similar content suggestions
@@ -80,10 +85,12 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 - Image cache management
 - Optional animated background
 - GPU optimized animations for smooth performance on low end TV hardware
+- **Display rate switching** — match TV refresh rate and resolution to video content (opt-in)
+- **Theme song volume** — Off, Low, Medium or High, configured per device
 
 ## Requirements
 
-- A running Jellyfin server
+- A running Jellyfin server (10.8+; trickplay and theme songs require 10.9+)
 - Android TV or Google TV device
 - Android 8.0 (API 26) or newer
 
@@ -101,4 +108,4 @@ JellyWatch turns your Jellyfin server into a home cinema experience on the telev
 
 ## Keywords
 
-Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, stream movies and TV shows, Direct Play, 4K HDR streaming, Jellyseerr requests, media server client, home cinema, admin dashboard, server monitoring.
+Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, stream movies and TV shows, Direct Play, 4K HDR streaming, trickplay thumbnails, theme songs, display rate switching, Jellyseerr requests, media server client, home cinema, admin dashboard, server monitoring.
