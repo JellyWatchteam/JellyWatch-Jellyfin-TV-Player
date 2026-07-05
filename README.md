@@ -1,111 +1,159 @@
+<div align="center">
+
+<img src="https://jellywatch.app/static/images/JellyWatch_mascot.svg" alt="JellyWatch" width="96">
+
 # JellyWatch for Android TV
 
-JellyWatch is a fast, native Jellyfin client for Android TV and Google TV. Sign in to your Jellyfin server and stream your movies and TV shows on the big screen with Direct Play, 4K, HDR and full subtitle support, all built around the remote control.
+**The most complete Jellyfin client for Android TV and Google TV.**
 
-**[Get it on Google Play](https://play.google.com/store/apps/details?id=com.jellywatch.tv)**
+Native Jetpack Compose app. Built for the big screen and the remote in your hand.
 
-JellyWatch is an independent third party client for Jellyfin. A Jellyfin server is required. JellyWatch is not affiliated with the Jellyfin project.
+[![Get it on Google Play](https://img.shields.io/badge/Google%20Play-Download-brightgreen?logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.jellywatch.tv)
+[![Available on Amazon Appstore](https://img.shields.io/badge/Amazon%20Appstore-Download-orange?logo=amazon&logoColor=white)](https://www.amazon.fr/dp/B0H6F1KLQ4)
+[![JellyWatch.app](https://img.shields.io/badge/Website-jellywatch.app-7C3AED)](https://jellywatch.app/android-tv)
+[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/jellywatch)
+
+<br>
+
+> Requires a [Jellyfin](https://jellyfin.org) server. Not affiliated with the Jellyfin project.
+
+</div>
+
+---
 
 ## Overview
 
-JellyWatch turns your Jellyfin server into a home cinema experience on the television. It is built natively for the big screen with a modern Material Design 3 interface, smooth D-pad navigation, high resolution artwork and instant playback. The goal is simple: a fast, elegant Jellyfin TV player without sluggish menus.
+JellyWatch for Android TV turns your Jellyfin server into a real home cinema on Android TV, Google TV and Fire TV. A fast, polished interface designed entirely for D-pad navigation, with the features that no other Jellyfin TV client ships together in one app.
+
+Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, Amazon Fire TV, and any device running Android TV 8.0 or above.
+
+---
 
 ## Features
 
 ### Playback
 
-- Real Direct Play so your files are streamed as is, with no quality loss
-- Hardware accelerated playback powered by ExoPlayer (Media3)
-- Smart transcoding fallback when a codec is not supported by the device
-- 4K, HDR and HLS support
-- Multiple audio tracks and surround sound, with optional stereo downmix
-- Full subtitle support: SRT, styled ASS and SSA, with optional server burn-in
-- Chapters, resume playback and automatic next episode
-- Quality selection during playback (4K / 1080p / 720p / 480p / 360p)
-- **Trickplay thumbnails** during seek — scrub the timeline and see a live preview of the video at the target position (requires trickplay to be generated on the server)
-- **Display rate switching** — optionally match the TV refresh rate and resolution to the video frame rate (24p, 25p, 30p…) for smoother playback
-- **Stats for Nerds** overlay — live display of video codec, resolution, bitrate, frame rate, HDR type, audio codec, network bandwidth, dropped frames, buffer health and current display mode
+| Feature | Details |
+|---|---|
+| **Direct Play and 4K HDR** | ExoPlayer with hardware decoding. H.264, HEVC, AV1 (libdav1d software fallback), VP9. HDR10, HDR10+, Dolby Vision. |
+| **TrueHD Atmos and DTS:X passthrough** | FFmpeg audio extension for local TrueHD and DTS-HD MA decode. Force passthrough mode for stubborn HDMI/eARC setups. |
+| **3-level fallback** | Passthrough first, then local FFmpeg decode, then server transcode only as last resort. |
+| **Trickplay thumbnails** | Scrub the timeline and see a live preview of the scene above the seek bar. Requires Jellyfin 10.9+. |
+| **Display rate switching** | Automatically matches your TV refresh rate to the video frame rate (24p, 25p, 30p, 60p). Eliminates judder on compatible TVs. |
+| **Live quality selection** | Switch between Original, 4K, 1080p, 720p, 480p and 360p during playback. Server adapts the stream instantly. |
+| **Subtitle rendering** | ASS/SSA rendered pixel-perfect via libass. PGS and DVBSub decoded locally. |
+| **Playback speed** | 0.5x to 2x from the player overlay. |
+| **Zoom / aspect ratio** | Fit, Fill and Crop with one button press. |
+| **Skip intro and credits** | Off, Auto-skip or Button, configurable per segment type (intro, credits, recap, preview, commercials). Smart coexistence with Up Next overlay. |
+| **Up Next auto-play** | 15-second countdown at episode end. |
+| **Stats for Nerds** | Live overlay: codec, resolution, bitrate, HDR type, audio delivery mode, frame rate, dropped frames, buffer health, network bandwidth. |
+| **Audio Night Mode** | Dynamic range compression reduces loud peaks and boosts quiet dialog for late-night sessions. |
 
-### Home screen
+### Watching Together
 
-- Resume watching right where you left off
-- Next Up to keep track of your TV shows
-- Recently added content organized by library
-- Direct access to every Jellyfin library
+| Feature | Details |
+|---|---|
+| **SyncPlay** | Create or join a group. Play, pause and seek together in real time. Playback pauses automatically when someone is buffering and resumes when everyone is ready. Clock sync and drift correction run in the background. |
 
-### Movies and TV shows
+### Browsing and Discovery
 
-- Detailed pages with overview, cast, crew and studio
-- **Theme songs** — ambient background music plays automatically when browsing movie and series pages (if the server has theme songs available; configurable volume or disable in settings)
-- Browse by seasons and episodes
-- Technical info: resolution, video and audio codecs, container
-- More like this and similar content suggestions
-- Mark as watched or unwatched and restart from the beginning
+| Feature | Details |
+|---|---|
+| **Theme songs** | Ambient background music plays automatically on movie and series detail pages. Configurable volume (Off, Low, Medium, High). |
+| **Local trailer autoplay** | Place a `Movie-trailer.mkv` or `Movie-trailer.mp4` next to your film on the server. JellyWatch plays it muted on loop as the detail page backdrop. No YouTube, no API key required. |
+| **Home Screen Channels** | Continue Watching and Recently Added appear directly on your Android TV launcher. Resume in one click. |
+| **Seerr integration** | Discover trending titles and request movies or TV shows directly from your remote. Track request status in real time. |
+| **Fast search** | Find any movie, series or episode in seconds. Voice search on compatible remotes. |
+| **Customizable home screen** | Choose which rows appear and their order: Continue Watching, Next Up, Recently Added. Show, hide and reorder sidebar libraries. Each user configures their own layout. |
+| **Feature Board** | Vote on upcoming features and boost the ones you want most. Community-driven development roadmap. |
 
-### Search
+### Account and Server Management
 
-- Find movies, TV shows and episodes in seconds
-- Filter by content type
+| Feature | Details |
+|---|---|
+| **TV Quick Login** | Enter a short code shown on your phone. No TV keyboard required. |
+| **Multi-account** | Switch between Jellyfin accounts instantly. Each user keeps their own watch history and preferences. |
+| **Admin dashboard** | Monitor active sessions, library stats, running tasks, connected devices. Trigger library scans from the couch. |
 
-### Requests with Seerr
+### Comfort Features
 
-- Jellyseerr and Overseerr integration
-- Request new movies and TV shows straight from your TV
-- Track requests: pending, approved and available
-- Request full sagas and collections in one action
-- Browse trending and popular titles and upcoming releases
+| Feature | Details |
+|---|---|
+| **Still Watching** | After several consecutive episodes without remote interaction, a dialog asks if you are still there. Pauses playback if you do not respond. Configurable threshold (2-5 episodes). |
+| **Built-in screensaver** | Artwork slideshow with Ken Burns zoom, horizontal parallax and smooth crossfade. Shifts all elements automatically for OLED burn-in protection. |
 
-### Admin Dashboard
+---
 
-- Real time server monitoring on your TV
-- View active playback sessions with backdrop artwork, progress and transcode status
-- Library statistics: movie, series, episode and song counts
-- Connected devices summary grouped by user
-- Trigger a full library scan from the remote
-- Running task progress with live updates every 3 seconds
-- Server info: version, OS, local address, update and restart alerts
-- Admin only: visible in the sidebar when logged in as a Jellyfin administrator
+## Why JellyWatch
 
-### Multi Account
+Compared to the other Jellyfin Android TV clients (Jellyfin for Android TV, Findroid, Streamyfin, Moonfin, Wholphin), JellyWatch is the only one that ships all of the following in a single app:
 
-- Switch between multiple Jellyfin accounts on the same device
-- Account picker with avatar, server info and quick switch
-- Auto focus on the active account
-- Remove accounts with confirmation dialog
+- SyncPlay (watch together in real time)
+- TrueHD Atmos and DTS:X force passthrough with FFmpeg local decode fallback
+- Local PGS subtitle rendering and libass ASS/SSA
+- Trickplay thumbnails
+- Display rate switching
+- Live quality switching during playback
+- Stats for Nerds including audio delivery mode
+- Audio Night Mode (dynamic range compression)
+- Still Watching protection
+- TV Quick Login (code-based, no keyboard)
+- Screensaver with Ken Burns, parallax and OLED burn-in protection
+- Skip intro/credits with 3 configurable modes per segment type
+- Local trailer autoplay from server-side files
+- Customizable home screen rows and sidebar order
+- Feature Board (community-driven development roadmap)
 
-### Sign in
-
-- Username and password login with show and hide toggle
-- Credentials encrypted and stored securely on the device
-
-### Built for your setup
-
-- Automatic detection of device capabilities and codecs
-- Force stereo output for older receivers and televisions
-- Image cache management
-- Optional animated background
-- GPU optimized animations for smooth performance on low end TV hardware
-- **Display rate switching** — match TV refresh rate and resolution to video content (opt-in)
-- **Theme song volume** — Off, Low, Medium or High, configured per device
+---
 
 ## Requirements
 
-- A running Jellyfin server (10.8+; trickplay and theme songs require 10.9+)
-- Android TV or Google TV device
-- Android 8.0 (API 26) or newer
+- Android TV 8.0 or above
+- Jellyfin Server 10.8 or above
+- Trickplay thumbnails and theme songs require Jellyfin 10.9+
 
-## Tech stack
+---
 
-- Kotlin and Jetpack Compose for TV
-- Material Design 3
-- ExoPlayer / Media3 for playback
-- Hilt for dependency injection
-- Retrofit and Gson for networking
-- Coil for image loading
-- Compose compiler stability configuration for minimal recompositions
-- Baseline Profile for fast cold start
-- GPU accelerated animations via graphicsLayer
+## Installation
 
-## Keywords
+**Google Play** (Android TV, Google TV)
 
-Jellyfin Android TV client, Jellyfin TV player, Jellyfin Google TV, stream movies and TV shows, Direct Play, 4K HDR streaming, trickplay thumbnails, theme songs, display rate switching, Jellyseerr requests, media server client, home cinema, admin dashboard, server monitoring.
+Search for *JellyWatch for Android TV* on Google Play or use the direct link:
+`https://play.google.com/store/apps/details?id=com.jellywatch.tv`
+
+**Amazon Appstore** (Fire TV)
+
+Available on Amazon Appstore:
+`https://www.amazon.fr/dp/B0H6F1KLQ4`
+
+**Setup**
+
+1. Install the app on your TV.
+2. Enter your Jellyfin server URL.
+3. Sign in with your credentials or use TV Quick Login with a code from your phone.
+4. Start watching.
+
+---
+
+## Companion App
+
+**JellyWatch for Android** is the monitoring and management app for your Jellyfin server. Use it on your phone to track active sessions, manage users, view analytics and control your server. Available on Google Play.
+
+Both apps share the same Watch Pass subscription.
+
+---
+
+## Links
+
+- Website: [jellywatch.app/android-tv](https://jellywatch.app/android-tv)
+- Discord: [discord.gg/jellywatch](https://discord.gg/jellywatch)
+- Google Play: [JellyWatch for Android TV](https://play.google.com/store/apps/details?id=com.jellywatch.tv)
+- Amazon Appstore: [JellyWatch on Amazon](https://www.amazon.fr/dp/B0H6F1KLQ4)
+
+---
+
+<div align="center">
+
+JellyWatch is an independent third-party client. Not affiliated with the Jellyfin project.
+
+</div>
