@@ -41,7 +41,8 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 | **Trickplay thumbnails** | Scrub the timeline and see a live preview of the scene above the seek bar. Requires Jellyfin 10.9+. |
 | **Display rate switching** | Automatically matches your TV refresh rate to the video frame rate (24p, 25p, 30p, 60p). Eliminates judder on compatible TVs. |
 | **Live quality selection** | Switch between Original, 4K, 1080p, 720p, 480p and 360p during playback. Server adapts the stream instantly. |
-| **Subtitle rendering** | ASS/SSA rendered pixel-perfect via libass. PGS and DVBSub decoded locally. |
+| **Subtitle rendering** | ASS/SSA rendered pixel-perfect via libass. PGS and DVBSub decoded locally. SRT/ASS/VTT external subtitles loaded as sidecars. |
+| **Online subtitle search** | Search and download subtitles from OpenSubtitles (and other providers) directly from the player. Requires the subtitle provider plugin on your Jellyfin server. No account needed in the app. |
 | **Playback speed** | 0.5x to 2x from the player overlay. |
 | **Zoom / aspect ratio** | Fit, Fill and Crop with one button press. |
 | **Skip intro and credits** | Off, Auto-skip or Button, configurable per segment type (intro, credits, recap, preview, commercials). Smart coexistence with Up Next overlay. |
@@ -61,6 +62,8 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 |---|---|
 | **Theme songs** | Ambient background music plays automatically on movie and series detail pages. Configurable volume (Off, Low, Medium, High). |
 | **Local trailer autoplay** | Place a `Movie-trailer.mkv` or `Movie-trailer.mp4` next to your film on the server. JellyWatch plays it muted on loop as the detail page backdrop. No YouTube, no API key required. |
+| **Book and ebook reader** | Browse your Jellyfin book library and read EPUB files directly on your TV. Full-screen reader with dark, light and sepia themes, adjustable font size, and D-pad page turning. |
+| **Music player** | Browse albums, artists, genres and playlists. Play tracks with background playback that continues across all screens. Persistent mini-player, full Now Playing screen with album art, queue management, shuffle and repeat. Playback reports to Jellyfin so your listening history stays in sync. |
 | **Home Screen Channels** | Continue Watching and Recently Added appear directly on your Android TV launcher. Resume in one click. |
 | **Seerr integration** | Discover trending titles and request movies or TV shows directly from your remote. Track request status in real time. |
 | **Fast search** | Find any movie, series or episode in seconds. Voice search on compatible remotes. |
@@ -91,6 +94,7 @@ Compared to the other Jellyfin Android TV clients (Jellyfin for Android TV, Find
 - SyncPlay (watch together in real time)
 - TrueHD Atmos and DTS:X force passthrough with FFmpeg local decode fallback
 - Local PGS subtitle rendering and libass ASS/SSA
+- Online subtitle search and download (OpenSubtitles via Jellyfin server plugin)
 - Trickplay thumbnails
 - Display rate switching
 - Live quality switching during playback
@@ -101,6 +105,8 @@ Compared to the other Jellyfin Android TV clients (Jellyfin for Android TV, Find
 - Screensaver with Ken Burns, parallax and OLED burn-in protection
 - Skip intro/credits with 3 configurable modes per segment type
 - Local trailer autoplay from server-side files
+- Built-in EPUB reader for Jellyfin book libraries (dark, light and sepia themes, D-pad navigation)
+- Full music player with background playback (albums, artists, genres, playlists, mini-player, Now Playing, queue, shuffle, repeat)
 - Customizable home screen rows and sidebar order
 - Feature Board (community-driven development roadmap)
 
