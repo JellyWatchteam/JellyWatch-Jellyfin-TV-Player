@@ -49,6 +49,13 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 | **Up Next auto-play** | 15-second countdown at episode end. |
 | **Stats for Nerds** | Live overlay: codec, resolution, bitrate, HDR type, audio delivery mode, frame rate, dropped frames, buffer health, network bandwidth. |
 | **Audio Night Mode** | Dynamic range compression reduces loud peaks and boosts quiet dialog for late-night sessions. |
+| **Picture in Picture** | Video continues in a floating window when you leave the app or press Home. Returns to full screen on tap. 16:9 aspect ratio. |
+
+### Smart Home
+
+| Feature | Details |
+|---|---|
+| **Home Assistant cinema mode** | Connect your Home Assistant (HAOS) instance via a Long-Lived Access Token. Assign a script or service to play, pause and stop events. When you press Play, your lights dim. When you pause or stop, they come back on. Fully local — no cloud, no polling. Configure in Settings → Home Assistant. |
 
 ### Watching Together
 
@@ -64,11 +71,20 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 | **Local trailer autoplay** | Place a `Movie-trailer.mkv` or `Movie-trailer.mp4` next to your film on the server. JellyWatch plays it muted on loop as the detail page backdrop. No YouTube, no API key required. |
 | **Book and ebook reader** | Browse your Jellyfin book library and read EPUB files directly on your TV. Full-screen reader with dark, light and sepia themes, adjustable font size, and D-pad page turning. |
 | **Music player** | Browse albums, artists, genres and playlists. Play tracks with background playback that continues across all screens. Persistent mini-player, full Now Playing screen with album art, queue management, shuffle and repeat. Playback reports to Jellyfin so your listening history stays in sync. |
+| **Music Equalizer** | 10-band equalizer with presets (Bass Boost, Flat, Vocal and more). Adjust in real time from the Now Playing screen. |
+| **Multichannel FLAC Surround** | FLAC 5.1 and 7.1 play in full surround on ARC/eARC soundbars and receivers. The app detects multichannel tracks and automatically delivers Dolby Digital Plus (EAC3) over HDMI ARC without touching the server settings. Stereo tracks play lossless as-is. Stats for Nerds overlay shows codec, channel count, sample rate and delivery mode in real time. |
 | **Home Screen Channels** | Continue Watching and Recently Added appear directly on your Android TV launcher. Resume in one click. |
 | **Seerr integration** | Discover trending titles and request movies or TV shows directly from your remote. Track request status in real time. |
 | **Fast search** | Find any movie, series or episode in seconds. Voice search on compatible remotes. |
 | **Customizable home screen** | Choose which rows appear and their order: Continue Watching, Next Up, Recently Added. Show, hide and reorder sidebar libraries. Each user configures their own layout. |
 | **Feature Board** | Vote on upcoming features and boost the ones you want most. Community-driven development roadmap. |
+
+### Family
+
+| Feature | Details |
+|---|---|
+| **Kids Profile** | Dedicated Kids mode with parental PIN lock. Custom home screen with poster cards and hero banner. Simplified navigation. Color themes (Blue, Orange, Green) with Fredoka font. Content filtering is handled by your Jellyfin server user policy. |
+| **Linked Profiles (Multi-Server)** | Link accounts from different Jellyfin servers together. Their libraries are merged into a single home screen — one unified Continue Watching, one Next Up, one Recently Added across all servers. Each linked profile stays independent for playback and watch history. Kids profiles cannot be linked. |
 
 ### Account and Server Management
 
@@ -76,6 +92,7 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 |---|---|
 | **TV Quick Login** | Enter a short code shown on your phone. No TV keyboard required. |
 | **Multi-account** | Switch between Jellyfin accounts instantly. Each user keeps their own watch history and preferences. |
+| **Linked Profiles (Multi-Server)** | Connect accounts from multiple Jellyfin servers and link them together. Once linked, the home screen shows a single unified feed: Continue Watching, Next Up and Recently Added are aggregated from every server at once. Manage links from the "Who's watching?" screen. Kids profiles cannot be linked. |
 | **Admin dashboard** | Monitor active sessions, library stats, running tasks, connected devices. Trigger library scans from the couch. |
 
 ### Comfort Features
@@ -107,8 +124,14 @@ Compared to the other Jellyfin Android TV clients (Jellyfin for Android TV, Find
 - Local trailer autoplay from server-side files
 - Built-in EPUB reader for Jellyfin book libraries (dark, light and sepia themes, D-pad navigation)
 - Full music player with background playback (albums, artists, genres, playlists, mini-player, Now Playing, queue, shuffle, repeat)
+- Multichannel FLAC Surround: FLAC 5.1/7.1 in full Dolby Digital Plus over HDMI ARC/eARC — automatic, zero config, with real-time Stats for Nerds overlay
 - Customizable home screen rows and sidebar order
 - Feature Board (community-driven development roadmap)
+- Kids Profile with dedicated home screen, Fredoka font, parental PIN gate and simplified navigation
+- Linked Profiles: merge accounts from multiple Jellyfin servers into a single unified home screen
+- Picture in Picture (PIP): video in a floating window when you leave the app
+- Music Equalizer: 10-band with real-time adjustment and presets
+- Home Assistant cinema mode: trigger smart home automations (lights, scripts, scenes) on play, pause and stop
 
 ---
 
