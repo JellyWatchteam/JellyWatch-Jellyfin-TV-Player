@@ -4,7 +4,7 @@
 
 # JellyWatch for Android TV
 
-**The most complete Jellyfin client for Android TV and Google TV.**
+**The most complete Jellyfin and Emby client for Android TV and Google TV.**
 
 Native Jetpack Compose app. Built for the big screen and the remote in your hand.
 
@@ -15,7 +15,7 @@ Native Jetpack Compose app. Built for the big screen and the remote in your hand
 
 <br>
 
-> Requires a [Jellyfin](https://jellyfin.org) server. Not affiliated with the Jellyfin project.
+> Requires a [Jellyfin](https://jellyfin.org) or [Emby](https://emby.media) server. Not affiliated with the Jellyfin or Emby projects.
 
 </div>
 
@@ -23,13 +23,21 @@ Native Jetpack Compose app. Built for the big screen and the remote in your hand
 
 ## Overview
 
-JellyWatch for Android TV turns your Jellyfin server into a real home cinema on Android TV, Google TV and Fire TV. A fast, polished interface designed entirely for D-pad navigation, with the features that no other Jellyfin TV client ships together in one app.
+JellyWatch for Android TV turns your Jellyfin or Emby server into a real home cinema on Android TV, Google TV and Fire TV. A fast, polished interface designed entirely for D-pad navigation, with the features that no other Jellyfin or Emby TV client ships together in one app.
 
 Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, Amazon Fire TV, and any device running Android TV 8.0 or above.
 
 ---
 
 ## Features
+
+### Server Compatibility
+
+| Feature | Details |
+|---|---|
+| **Jellyfin support** | Full support for Jellyfin 10.8+. All features available including trickplay, theme songs, Skip Intro, SyncPlay, remote subtitle search, and admin dashboard. |
+| **Emby support** | Full support for Emby servers. Libraries, Continue Watching, Live TV, recording timers, playback (Direct Play and transcoding), multi-account and linked profiles all work. Jellyfin-exclusive features (trickplay, Skip Intro, SyncPlay, remote subtitles, theme songs) are gracefully hidden when connected to Emby. |
+| **Automatic detection** | Enter your server URL and the app detects the server type automatically. No manual selection required in most cases. A manual override is available on the login screen. |
 
 ### Playback
 
@@ -106,7 +114,9 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 
 ## Why JellyWatch
 
-Compared to the other Jellyfin Android TV clients (Jellyfin for Android TV, Findroid, Streamyfin, Moonfin, Wholphin), JellyWatch is the only one that ships all of the following in a single app:
+Compared to the other Jellyfin and Emby Android TV clients (Jellyfin for Android TV, Findroid, Streamyfin, Moonfin, Wholphin), JellyWatch is the only one that ships all of the following in a single app:
+
+- **Both Jellyfin and Emby** from one app, with automatic server type detection
 
 - SyncPlay (watch together in real time)
 - TrueHD Atmos and DTS:X force passthrough with FFmpeg local decode fallback
@@ -138,8 +148,9 @@ Compared to the other Jellyfin Android TV clients (Jellyfin for Android TV, Find
 ## Requirements
 
 - Android TV 8.0 or above
-- Jellyfin Server 10.8 or above
-- Trickplay thumbnails and theme songs require Jellyfin 10.9+
+- Jellyfin Server 10.8+ **or** Emby Server (recent version)
+- Trickplay thumbnails and theme songs require Jellyfin 10.9+ (Jellyfin only)
+- Skip Intro / Credits requires Jellyfin 10.9+ (Jellyfin only)
 
 ---
 
@@ -158,7 +169,7 @@ Available on Amazon Appstore:
 **Setup**
 
 1. Install the app on your TV.
-2. Enter your Jellyfin server URL.
+2. Enter your Jellyfin or Emby server URL (the type is detected automatically).
 3. Sign in with your credentials or use TV Quick Login with a code from your phone.
 4. Start watching.
 
@@ -183,6 +194,6 @@ Both apps share the same Watch Pass subscription.
 
 <div align="center">
 
-JellyWatch is an independent third-party client. Not affiliated with the Jellyfin project.
+JellyWatch is an independent third-party client. Not affiliated with the Jellyfin or Emby projects.
 
 </div>
