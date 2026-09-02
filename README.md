@@ -63,7 +63,7 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 
 | Feature | Details |
 |---|---|
-| **Home Assistant cinema mode** | Connect your Home Assistant (HAOS) instance via a Long-Lived Access Token. Assign a script or service to play, pause and stop events. When you press Play, your lights dim. When you pause or stop, they come back on. Fully local — no cloud, no polling. Configure in Settings → Home Assistant. |
+| **Home Assistant cinema mode** | Connect your Home Assistant (HAOS) instance via a Long-Lived Access Token. Assign a script or service to play, pause and stop events. When you press Play, your lights dim. When you pause or stop, they come back on. Fully local -- no cloud, no polling. Configure in Settings → Home Assistant. |
 
 ### Watching Together
 
@@ -92,7 +92,7 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 | Feature | Details |
 |---|---|
 | **Kids Profile** | Dedicated Kids mode with parental PIN lock. Custom home screen with poster cards and hero banner. Simplified navigation. Color themes (Blue, Orange, Green) with Fredoka font. Content filtering is handled by your Jellyfin server user policy. |
-| **Linked Profiles (Multi-Server)** | Link accounts from different Jellyfin servers together. Their libraries are merged into a single home screen — one unified Continue Watching, one Next Up, one Recently Added across all servers. Each linked profile stays independent for playback and watch history. Kids profiles cannot be linked. |
+| **Linked Profiles (Multi-Server)** | Link accounts from different Jellyfin servers together. Their libraries are merged into a single home screen -- one unified Continue Watching, one Next Up, one Recently Added across all servers. Each linked profile stays independent for playback and watch history. Kids profiles cannot be linked. |
 
 ### Account and Server Management
 
@@ -109,6 +109,21 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 |---|---|
 | **Still Watching** | After several consecutive episodes without remote interaction, a dialog asks if you are still there. Pauses playback if you do not respond. Configurable threshold (2-5 episodes). |
 | **Built-in screensaver** | Artwork slideshow with Ken Burns zoom, horizontal parallax and smooth crossfade. Shifts all elements automatically for OLED burn-in protection. |
+
+### Android Auto (Google Play version only)
+
+| Feature | Details |
+|---|---|
+| **Music in the car** | When your phone is connected to a car running Android Auto, JellyWatch TV appears in the media apps list. Browse and play your Jellyfin or Emby music library from the car screen. |
+| **Full library browsing** | Albums, artists, genres, playlists and audiobooks accessible from the car dashboard. Alphabetical navigation (A-Z) for large libraries. |
+| **Voice search** | "Hey Google, play [artist] on JellyWatch TV". Falls back to suggested tracks when no match is found. |
+| **Shuffle All and Radio** | Shuffle your entire music library or start an Instant Mix (radio) seeded from any album, artist or track. |
+| **Favorites at root level** | Your favourite tracks are one tap away from the Android Auto home screen. No need to drill into a library first. |
+| **Recently Played and Recently Added** | Quick access sections on the root screen for discovering new music and resuming what you were listening to. |
+| **Playback reporting** | Playback position syncs back to your Jellyfin or Emby server. Your listening history stays consistent across all devices. |
+| **HD artwork** | Album art displayed at 600px resolution on the car screen and in the Now Playing view. |
+| **Rich metadata** | Album title, track number and duration displayed on the Now Playing screen. Progress bar shows time remaining. |
+| **Emby compatible** | Works with both Jellyfin and Emby servers. No configuration needed. |
 
 ---
 
@@ -134,7 +149,7 @@ Compared to the other Jellyfin and Emby Android TV clients (Jellyfin for Android
 - Local trailer autoplay from server-side files
 - Built-in EPUB reader for Jellyfin book libraries (dark, light and sepia themes, D-pad navigation)
 - Full music player with background playback (albums, artists, genres, playlists, mini-player, Now Playing, queue, shuffle, repeat)
-- Multichannel FLAC Surround: FLAC 5.1/7.1 in full Dolby Digital Plus over HDMI ARC/eARC — automatic, zero config, with real-time Stats for Nerds overlay
+- Multichannel FLAC Surround: FLAC 5.1/7.1 in full Dolby Digital Plus over HDMI ARC/eARC -- automatic, zero config, with real-time Stats for Nerds overlay
 - Customizable home screen rows and sidebar order
 - Feature Board (community-driven development roadmap)
 - Kids Profile with dedicated home screen, Fredoka font, parental PIN gate and simplified navigation
@@ -142,6 +157,7 @@ Compared to the other Jellyfin and Emby Android TV clients (Jellyfin for Android
 - Picture in Picture (PIP): video in a floating window when you leave the app
 - Music Equalizer: 10-band with real-time adjustment and presets
 - Home Assistant cinema mode: trigger smart home automations (lights, scripts, scenes) on play, pause and stop
+- Android Auto support (Google Play version): browse and play music, audiobooks and playlists from the car screen with voice search, shuffle, radio, favorites at root level, HD artwork, rich metadata and playback reporting to the server. Works with Jellyfin and Emby.
 
 ---
 
