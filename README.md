@@ -11,7 +11,7 @@ Native Jetpack Compose app. One app for your TV, phone and tablet.
 [![Get it on Google Play](https://img.shields.io/badge/Google%20Play-Download-brightgreen?logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.jellywatch.tv)
 [![Available on Amazon Appstore](https://img.shields.io/badge/Amazon%20Appstore-Download-orange?logo=amazon&logoColor=white)](https://www.amazon.fr/dp/B0H6F1KLQ4)
 [![JellyWatch.app](https://img.shields.io/badge/Website-jellywatch.app-7C3AED)](https://jellywatch.app/player)
-[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/jellywatch)
+[![Discord](https://img.shields.io/badge/Discord-Community-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/JRkt5U5uZs)
 
 <br>
 
