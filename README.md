@@ -75,6 +75,8 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 
 | Feature | Details |
 |---|---|
+| **Personalized Recommendations** | Six shelves built from your watch history, ratings, favorites and series habits. Updates run in the background. A banner notifies you when a new ranking is ready, so browsing is never interrupted. Long-press any card to permanently hide a title. Requires a free JellyWatch account. |
+| **Custom Shelves** | Build home screen rows from a rule, not a fixed list. Choose movies or series, then genre, decade, minimum rating, unwatched, favorites, 4K, and maximum runtime. Sort by newest, best rated, title or random. The row refreshes every time you open home. Set it up in Home layout, on TV and on mobile. |
 | **Theme songs** | Ambient background music plays automatically on movie and series detail pages. Configurable volume (Off, Low, Medium, High). |
 | **Local trailer autoplay** | Place a `Movie-trailer.mkv` or `Movie-trailer.mp4` next to your film on the server. JellyWatch Player plays it muted on loop as the detail page backdrop. No YouTube, no API key required. |
 | **Book and ebook reader** | Browse your Jellyfin book library and read EPUB files on any screen. Full-screen reader with dark, light and sepia themes, adjustable font size, and D-pad / touch page turning. |
@@ -83,8 +85,15 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 | **Multichannel FLAC Surround** | FLAC 5.1 and 7.1 play in full surround on ARC/eARC soundbars and receivers. The app detects multichannel tracks and automatically delivers Dolby Digital Plus (EAC3) over HDMI ARC without touching the server settings. Stereo tracks play lossless as-is. Stats for Nerds overlay shows codec, channel count, sample rate and delivery mode in real time. |
 | **Home Screen Channels** | Continue Watching and Recently Added appear directly on your Android TV launcher. Resume in one click. |
 | **Seerr integration** | Discover trending titles and request movies or TV shows directly from your remote or phone. Track request status in real time. |
+| **Anti-spoilers** | Thumbnails blurred, episode titles replaced with a generic label, and summaries hidden for unwatched episodes. The currently open episode and all watched episodes stay unchanged. Configurable in Settings. |
 | **Fast search** | Find any movie, series or episode in seconds. Voice search on compatible remotes. |
 | **Customizable home screen** | Choose which rows appear and their order: Continue Watching, Next Up, Recently Added. Show, hide and reorder sidebar libraries. Each user configures their own layout. |
+
+### Community
+
+| Feature | Details |
+|---|---|
+| **SocialWatch** | See what other Watchers are watching right now. Like a movie or series, rate it with popcorns, and read community reviews on the title page. A live feed shows who is watching, and every review can be voted helpful. |
 | **Feature Board** | Vote on upcoming features and boost the ones you want most. Community-driven development roadmap. |
 
 ### Family
@@ -132,6 +141,10 @@ Works on NVIDIA Shield, Chromecast with Google TV, Sony Bravia, Xiaomi Mi Box, A
 Compared to the other Jellyfin and Emby clients (Jellyfin for Android TV, Findroid, Streamyfin, Moonfin, Wholphin), JellyWatch Player is the only one that ships all of the following in a single app, across TV, mobile and tablet:
 
 - **Both Jellyfin and Emby** from one app, with automatic server type detection
+- Personalized Recommendations: six shelves built from your taste, updated silently in the background
+- SocialWatch: likes, community reviews and a live feed of who is watching what
+- Custom Shelves: rule-based home screen rows you configure yourself
+- Anti-spoilers: thumbnails blurred, titles and summaries hidden for unwatched episodes
 - SyncPlay (watch together in real time)
 - TrueHD Atmos and DTS:X force passthrough with FFmpeg local decode fallback
 - Local PGS subtitle rendering and libass ASS/SSA
