@@ -214,7 +214,7 @@ Both apps share the same Watch Pass subscription.
 ## Links
 
 - Website: [jellywatch.app/player](https://jellywatch.app/player)
-- Discord: [discord.gg/jellywatch](https://discord.gg/jellywatch)
+- Discord: [discord.gg/jellywatch](https://discord.com/invite/JRkt5U5uZs)
 - Google Play: [JellyWatch Player](https://play.google.com/store/apps/details?id=com.jellywatch.tv)
 - Amazon Appstore: [JellyWatch Player on Amazon](https://www.amazon.fr/dp/B0H6F1KLQ4)
 
